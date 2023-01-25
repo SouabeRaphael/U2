@@ -13,8 +13,119 @@ body {
   font-size: 14px;
   line-height: 1.5em;
   color: black;
-  background-color: #efefef;
+  background-color: #355266;
 }
 /* ------------------------------------------------------------------------------------------------------------------- */
   /* Design Header */
 /* ------------------------------------------------------------------------------------------------------------------- */
+
+/* style header*/
+/* -------------------------------------- */
+.content_header{
+  width: 100%;
+  height: 100px;
+}
+
+.header_desktop{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* style navbar desktop */
+/* -------------------------------------- */
+.header_nav{
+  display: none;
+}
+
+
+/* style menu burger mobile */
+/* -------------------------------------- */
+.circle_menu_burger{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_line_menu{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.circle_menu_burger .line {
+  position: relative;
+  width: 30px;
+  height: 1.5px;
+  background-color: white;
+}
+.circle_menu_burger .line_bottom {
+  margin-top: 10px;
+}
+
+
+/* style hero section */
+/* -------------------------------------- */
+
+.site-content{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero_section{
+  width: 100%;
+  height: 60vh;
+}
+
+.hero_section .background_image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.hero_section .background_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content_hero_section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content_hero_section h1{
+  color: white;
+  font-family: "kandin", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+}
+.content_hero_section p{
+  color: white;
+  font-family: "kandin", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 20px 0;
+}
+
