@@ -14,8 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- appel cdn fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- appel dosier css -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- appel dossier JavaScript -->
@@ -32,10 +31,10 @@
             </div>
             <div class="header_nav">
                 <nav class="navbar">
-                    <a href="#" class="item_nav active">Home</a>
-                    <a href="#" class="item_nav">Albums</a>
-                    <a href="#" class="item_nav">Biographie</a>
-                    <a href="#" class="item_nav">Clips</a>
+                    <a href="#1" class="item_nav active">Home</a>
+                    <a href="#2" class="item_nav">Albums</a>
+                    <a href="#3" class="item_nav">Biographie</a>
+                    <a href="#4" class="item_nav">Clips</a>
                 </nav> 
             </div>
         </div>
@@ -43,10 +42,18 @@
         <div class="header_mobile">
             <div class="circle_menu_burger">
                 <div class="container_line_menu">
-                    <div class="line line_top"></div>
-                    <div class="line line_bottom"></div>
+                    <div class="line line_top isOpen"></div>
+                    <div class="line line_bottom isOpen"></div>
                 </div>
             </div>
+        </div>
+        <div class="menu_full_screen isOpen">
+            <nav class="navbar_full_screen_mobile">
+                <a href="#1" class="item_nav_menu_burger active">Home</a>
+                <a href="#1" class="item_nav_menu_burger">Albums</a>
+                <a href="#1" class="item_nav_menu_burger">Biographie</a>
+                <a href="#1" class="item_nav_menu_burger">Clips</a>
+            </nav>
         </div>
     </header>
     <!---------------------------------------------------------------Fin header------------------------------------------------------------->
@@ -55,7 +62,7 @@
      
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site_content">
-        <section class="hero_section">
+        <section class="hero_section" id="1">
             <div class="background_image">
                 <img src="./assets/img/U2.png" alt="Images des 4 personnes du groupes de U2">
             </div>
@@ -70,10 +77,14 @@
                 </div>
             </div>
         </section>
-        <section class="albums_section">
+        <section class="albums_section" id="2">
             <div class="title_section">
                 <h2>Albums</h2>
                 <span class="line"></span>
+            </div>
+            <div class="filtre_albums">
+                <p class="item_filtre active">ALBUMS</p>
+                <p class="item_filtre">LIVES</p>
             </div>
             <div class="container_slide">
                 <div class="item_slide">
@@ -213,12 +224,12 @@
                 </div>
             </div>
         </section>
-        <section class="biographie_section">
+        <section class="biographie_section" id="3">
             <div class="title_section">
                 <h2>Biographie</h2>
                 <span class="line"></span>
             </div>
-            <div class="container_content">
+            <div class="container_content_biographie">
                 <figure>
                     <img src="./assets/img/u2-photo-credit-sam-jones-2017-jpg-2930923.jpg" alt="Images des 4 personnes du groupes de U2">
                 </figure>
@@ -233,7 +244,7 @@
                 </div>
             </div>
         </section>
-        <section class="clips_section">
+        <section class="clips_section" id="4">
             <div class="title_section">
                 <h2>Découvrir nos clip</h2>
                 <span class="line"></span>
@@ -249,19 +260,19 @@
                       <div class="carousel-item active">
                         <img src="./assets/img/maxresdefault (1).jpg" class="d-block w-100" alt="Clips video officiel de 'With or without' de U2">
                         <div class="picto-play">
-                            <img src="./assets/img/Icon feather-play.svg" alt="pictogramme play pour lancer la video">
+                            <i class="fa-regular fa-play"></i>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./assets/img/nouveau-clip-u2-get-on-your-boots.jpg" class="d-block w-100" alt="Clips video officiel de 'With or without' de U2">
+                        <img src="./assets/img/nouveau-clip-u2-get-on-your-boots.jpg" class="d-block w-100" alt="Clips video officiel de 'get on your boots' de U2">
                         <div class="picto-play">
-                            <img src="./assets/img/Icon feather-play.svg" alt="pictogramme play pour lancer la video">
+                            <i class="fa-regular fa-play"></i>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/img/u2-photo-credit-sam-jones-2017-jpg-2930923.jpg" class="d-block w-100" alt="Clips video officiel de 'With or without' de U2">
                         <div class="picto-play">
-                            <img src="./assets/img/Icon feather-play.svg" alt="pictogramme play pour lancer la video">
+                            <i class="fa-regular fa-play"></i>
                         </div>
                       </div>
                     </div>
@@ -278,17 +289,17 @@
     <!---------------------------------------------------------------Footer------------------------------------------------------------->
     <footer class="content-footer">
         <div class="logo">
-            <img src="./assets/img/logo_black.svg">
+            <img src="./assets/img/logo_black.svg" alt="logo U2 noire">
         </div>
         
         <div class="network">
-            <img src="./assets/img/Icon feather-instagram.svg">
-            <img src="./assets/img/Icon awesome-facebook-f.svg">
-            <img src="./assets/img/Icon awesome-twitter.svg">
+            <a href="https://www.instagram.com/u2/"><img src="./assets/img/Icon feather-instagram.svg" alt="pictogramme du reseaux sociaux instagram"></a>
+            <a href="https://www.facebook.com/u2"><img src="./assets/img/Icon awesome-facebook-f.svg" alt="pictogramme du reseaux sociaux facebook"></a>
+            <a href="https://twitter.com/u2"><img src="./assets/img/Icon awesome-twitter.svg" alt="pictogramme du reseaux sociaux twitter"></a>
         </div>
         <div class="link_accesibility">
             <a href="">Mentions Légals</a>
-            <a href="">Accessibilités</a>
+            <a href="https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/">Accessibilités</a>
         </div>
     </footer>
     
